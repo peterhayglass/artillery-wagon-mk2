@@ -4,7 +4,7 @@ local _grid = table.deepcopy(data.raw["equipment-grid"]["large-equipment-grid"])
 _grid.name = _name
 _grid.width = 10
 _grid.height = 10
-if mods["Battle Wagons"] then
+if mods["Battle_Wagons"] then
     _grid.equipment_categories =  {"Battle-Laser", "armor"}
 else 
     _grid.equipment_categories =  {"armor"}
