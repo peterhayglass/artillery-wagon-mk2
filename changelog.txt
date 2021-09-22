@@ -1,0 +1,17 @@
+Version: 0.0.3
+Date: 22 September 2021
+Changes:
+ - Battle Wagons mod is no longer required.  I still recommend it, and if you have it you can still use Battle Lasers in the Artillery Wagon Mk2.
+ - Allow Battle Laser insert (from Battle Wagons mod) to be inserted into Power Armor Mk3 grid (from Rampant Arsenal mod), if you have both these mods installed.
+ -- Neither of those mods is required
+ 
+
+Version: 0.0.2
+Date: 21 September 2021
+Changes:
+ - Allow Battle Laser insert from Battle Wagons to be inserted in Power Armor Mk2 grid, Spidertron grid
+
+Version: 0.0.1
+ - Add Artillery Wagon Mk2
+ - Battle Wagons mod required
+ - Artillery Wagon Mk2 grid is compatible with Battle Laser insert from Battle Wagons

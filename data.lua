@@ -4,7 +4,11 @@ local _grid = table.deepcopy(data.raw["equipment-grid"]["large-equipment-grid"])
 _grid.name = _name
 _grid.width = 10
 _grid.height = 10
-_grid.equipment_categories =  {"Battle-Laser", "armor"}
+if mods["Battle Wagons"] then
+    _grid.equipment_categories =  {"Battle-Laser", "armor"}
+else 
+    _grid.equipment_categories =  {"armor"}
+end
 
 local _entity = table.deepcopy(data.raw["artillery-wagon"]["artillery-wagon"])
 _entity.name = _name
@@ -29,5 +33,3 @@ _recipe.result = _name
 data:extend{_grid}
 data:extend{_entity, _item, _recipe}
 table.insert(data.raw["technology"]["power-armor-mk2"].effects, {type = "unlock-recipe", recipe = _name})
-table.insert(data.raw["equipment-grid"]["large-equipment-grid"].equipment_categories, "Battle-Laser")
-table.insert(data.raw["equipment-grid"]["spidertron-equipment-grid"].equipment_categories, "Battle-Laser")
